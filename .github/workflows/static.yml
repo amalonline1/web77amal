@@ -32,7 +32,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install HTMLHint
-        run: npm i htmlhint
+        run: npm install -g htmlhint
       - name: Validate HTML
         run: htmlhint "*.html"
       - name: Setup Pages
